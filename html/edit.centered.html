@@ -1,0 +1,140 @@
+<html>
+<head>
+<META NAME="ROBOTS" CONTENT="NOARCHIVE">
+
+<title>Plans 3 - Edit Plan</title>
+
+	<link rel="stylesheet" type="text/css" href="styles/legacy_globals.css" />
+	<link rel="stylesheet" type="text/css" href="styles/global.css" />
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/edit.js"></script>
+
+</head>
+<body>
+<!-- body: planspage_edit class: main -->
+
+<table width="100%" cellspacing="0" cellpadding="0" class="main">
+<tr>
+<td valign="top" align="left" class="left" width="12%">
+<table class="mainpanel"><tr><td>
+<p class="logo">&nbsp;</p>
+<Form action="read.php" method="GET">
+	<input type="text" name="searchname" value="" />
+	<br>
+	<input type="submit" name="" value="Read" />
+	</form>
+
+<table class="lowerpanel">
+<tr>
+<td><p class="imagelev1">&nbsp;</p></td><td></td><td></td>
+<td><a href="edit.php"  class="main">edit plan</a></td>
+</tr>
+
+<tr>
+<td><p class="imagelev1">&nbsp;</p></td><td></td><td></td>
+<td><a href="search.php"  class="main">search plans</a></td>
+</tr>
+
+<tr>
+<td><p class="imagelev1">&nbsp;</p></td><td></td><td></td>
+<td><a href="customize.php"  class="main">preferences</a></td>
+</tr>
+
+<tr>
+<td><p class="imagelev1">&nbsp;</p></td><td></td><td></td>
+<td><a href="quicklove.php"  class="main">quicklove</a></td>
+</tr>
+
+<tr>
+<td><p class="imagelev1">&nbsp;</p></td><td></td><td></td>
+<td><a href="index.php?logout=1"  class="main">log out</a></td>
+</tr>
+
+<tr><td><br></td><td><br></td><td><br></td><td><br></td></tr>
+
+</table>
+</td></tr></table>
+</td>
+
+<td valign="top">
+
+<br />
+
+<table>
+
+<tr><td>
+
+
+<form action="edit.php" method="post" id="editbox" class="form">
+<textarea id="edit_textarea" rows="14" cols="70" name="plan" onkeyup="javascript:checkPlanLength();">Vivamus magna diam, posuere et luctus eget, dapibus ut purus. Vestibulum vehicula sem vel lectus lacinia porttitor. Duis fermentum tincidunt lectus, in aliquet sapien viverra at. Phasellus vel massa est. In rutrum tortor vitae mauris auctor imperdiet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed vehicula convallis [cohnalex] et dictum. Nulla placerat porta facilisis. Sed egestas aliquam mi, in tristique enim scelerisque vitae. Cras molestie iaculis diam nec eleifend. Nunc id ante dui, ac commodo magna. Aliquam fringilla orci accumsan orci varius viverra. Phasellus eget arcu urna, quis sodales sem. Duis volutpat blandit purus non ornare. Proin eget posuere nunc.
+
+Sed dolor sem, [kensler] a scelerisque sed, convallis sit amet [carey] Nunc ut lacus nec est adipiscing eleifend id eu nisi. Aenean dignissim aliquam convallis. Nullam id tincidunt lectus. Proin convallis auctor nunc in accumsan. Nulla augue massa, suscipit sit amet eleifend sit amet, consectetur eget orci. Etiam laoreet euismod leo, non pretium massa semper vel. Curabitur rutrum nibh in augue cursus sodales porttitor erat blandit. Aliquam [athanasa] volutpat leo. Nunc risus elit, porta quis [nonexistent] ac, commodo in nisl. Fusce elementum accumsan dolor non suscipit. Phasellus quis dapibus est. Fusce vulputate, quam et commodo dapibus, ipsum magna bibendum tellus, sit amet pellentesque massa orci sit amet neque.
+
+Donec ultricies nisl at nisl gravida eget rhoncus mauris luctus. Donec semper aliquet ipsum, vel molestie erat faucibus vel. Pellentesque at eros vitae massa dictum posuere a quis ligula. Quisque ligula metus, tempus vitae auctor et, porta sit amet nisl. Praesent facilisis mollis [gorp] a gravida. Ut enim neque, vulputate congue accumsan ac, aliquam non elit. Aliquam eu erat ac tortor varius [campbell1] ut at libero. Duis enim augue, ultricies in semper sit amet, vehicula [portland] diam. Sed lorem odio, viverra condimentum dapibus nec, [denver] at lacus. Curabitur sodales fringilla sodales.
+</textarea><br />		<input type="hidden" name="part" value="1" >
+		<div id="edit_fill_meter">
+			<div class="fill_bar"><div class="full_amount"></div></div>
+			<div class="fill_percent">0%</div>
+		</div>
+		&nbsp;&nbsp;&nbsp;<input type="submit" value="Change Plan" />        <input type="hidden" name="edit_text_md5" value="1a00d15dd80e335453149cc4355ffe2f" >
+	</form>
+
+
+</td></tr></table></td>
+
+<td valign="top" align="left" class="right" width="22%">
+<table class="mainpanel"><tr><td>
+<table class="lowerpanel">
+<tr><td><p class="imagelev1">&nbsp;</p></td><td></td><td></td>
+
+<td><p class="main">auto read list</p></td>
+</tr>
+
+</table>
+<table>
+	
+<tr><td></td><td><p class="imagelev2">&nbsp;</p></td><td></td>
+<td><a href="setpriv.php?myprivl=1" class="lev2">level 1</a>
+</td>
+<td><a onClick ="  return confirm('Are you sure you\'d like to mark all the Plans on level 1 as read?')" href="setpriv.php?myprivl=1&mark_as_read=1">X</a></td></tr>
+
+<tr><td></td><td></td><td><p class="imagelev3">&nbsp;</p></td>
+<td><a href="read.php?searchname=heckerni" class="lev3">
+heckerni</a></td></tr>
+<tr><td></td><td></td><td><p class="imagelev3">&nbsp;</p></td>
+<td><a href="read.php?searchname=lamberte" class="lev3">
+lamberte</a></td></tr>
+<tr><td></td><td></td><td><p class="imagelev3">&nbsp;</p></td>
+<td><a href="read.php?searchname=colussiv" class="lev3">
+colussiv</a></td></tr>
+</tr>
+	
+<tr><td></td><td><p class="imagelev2">&nbsp;</p></td><td></td>
+<td><a href="setpriv.php?myprivl=2" class="lev2">level 2</a>
+</td>
+</tr>
+	
+<tr><td></td><td><p class="imagelev2">&nbsp;</p></td><td></td>
+<td><a href="setpriv.php?myprivl=3" class="lev2">level 3</a>
+</td>
+</tr>
+
+</table>
+</td></tr></table>
+</td>
+
+</tr></table>
+
+Do you read <a href="read.php?searchname=baldwint"  id="justupdatedlink">baldwint</a>, who just updated?<hr>	<hr>
+
+<div id="poweredby">
+<img src="images/logo-small.png" class="logo" width="120px" height="45px">
+<span>Powered by <a href="http://code.google.com/p/grinnellplans/">GrinnellPlans</a> r0, an opensource project. File a <a href="http://code.google.com/p/grinnellplans/issues/entry?comment=Username%3A+%5Bbaldwint%5D%0ARevision%3A+0%0AURL%3A+localhost%2F%7Etkb%2Fphplans%2Fedit.php%0AUser-agent%3A+Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10_8_2%29+AppleWebKit%2F536.26.17+%28KHTML%2C+like+Gecko%29+Version%2F6.0.2+Safari%2F536.26.17%0A%0AHow+can+we+reproduce+the+problem%3F%0A1.+%0A2.+%0A3.+%0A%0AWhat+is+the+expected+output%3F+What+do+you+see+instead%3F%0A+">bug report</a> after taking a look at the <a href="http://code.google.com/p/grinnellplans/issues/list?sort=-id">recent bugs</a> to avoid duplicates.</span>
+</div>
+
+<p style="font-size: 80%">
+		<span>        Use of the GrinnellPlans service means you have accepted the <a href="http://www.grinnellplans.com/tos"> GrinnellPlans Terms of Service agreement</a>. If you do not accept and abide by this agreement, you may not use GrinnellPlans. This agreement is subject to change without notice, so you should periodically review the most up-to-date version. You may contact us at <a href="mailto:grinnellplans@gmail.com">grinnellplans@gmail.com</a>.</span>
+
+</body></html>
+

@@ -1,0 +1,178 @@
+<html>
+<head>
+<META NAME="ROBOTS" CONTENT="NOARCHIVE">
+
+<title>Plans 3 - Stylesheets</title>
+
+	<link rel="stylesheet" type="text/css" href="styles/legacy_globals.css" />
+	<link rel="stylesheet" type="text/css" href="styles/global.css" />
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+
+</head>
+<body>
+<!-- body: planspage_stylesheets class: preferences -->
+
+<table width="100%" cellspacing="0" cellpadding="0" class="main">
+<tr>
+<td valign="top" align="left" class="left" width="12%">
+<table class="mainpanel"><tr><td>
+<p class="logo">&nbsp;</p>
+<Form action="read.php" method="GET">
+	<input type="text" name="searchname" value="" />
+	<br>
+	<input type="submit" name="" value="Read" />
+	</form>
+
+<table class="lowerpanel">
+<tr>
+<td><p class="imagelev1">&nbsp;</p></td><td></td><td></td>
+<td><a href="edit.php"  class="main">edit plan</a></td>
+</tr>
+
+<tr>
+<td><p class="imagelev1">&nbsp;</p></td><td></td><td></td>
+<td><a href="search.php"  class="main">search plans</a></td>
+</tr>
+
+<tr>
+<td><p class="imagelev1">&nbsp;</p></td><td></td><td></td>
+<td><a href="customize.php"  class="main">preferences</a></td>
+</tr>
+
+<tr>
+<td><p class="imagelev1">&nbsp;</p></td><td></td><td></td>
+<td><a href="quicklove.php"  class="main">quicklove</a></td>
+</tr>
+
+<tr>
+<td><p class="imagelev1">&nbsp;</p></td><td></td><td></td>
+<td><a href="index.php?logout=1"  class="main">log out</a></td>
+</tr>
+
+<tr><td><br></td><td><br></td><td><br></td><td><br></td></tr>
+<tr><td><p class="imagelev1">&nbsp;</p></td><td></td><td></td>
+
+<td><p class="main">auto read list</p></td>
+</tr>
+
+</table>
+<table>
+	
+<tr><td></td><td><p class="imagelev2">&nbsp;</p></td><td></td>
+<td><a href="setpriv.php?myprivl=1" class="lev2">level 1</a>
+</td>
+<td><a onClick ="  return confirm('Are you sure you\'d like to mark all the Plans on level 1 as read?')" href="setpriv.php?myprivl=1&mark_as_read=1">X</a></td></tr>
+
+<tr><td></td><td></td><td><p class="imagelev3">&nbsp;</p></td>
+<td><a href="read.php?searchname=heckerni" class="lev3">
+heckerni</a></td></tr>
+<tr><td></td><td></td><td><p class="imagelev3">&nbsp;</p></td>
+<td><a href="read.php?searchname=lamberte" class="lev3">
+lamberte</a></td></tr>
+<tr><td></td><td></td><td><p class="imagelev3">&nbsp;</p></td>
+<td><a href="read.php?searchname=colussiv" class="lev3">
+colussiv</a></td></tr>
+</tr>
+	
+<tr><td></td><td><p class="imagelev2">&nbsp;</p></td><td></td>
+<td><a href="setpriv.php?myprivl=2" class="lev2">level 2</a>
+</td>
+</tr>
+	
+<tr><td></td><td><p class="imagelev2">&nbsp;</p></td><td></td>
+<td><a href="setpriv.php?myprivl=3" class="lev2">level 3</a>
+</td>
+</tr>
+
+
+</table>
+</td></tr></table>
+</td>
+
+<td valign="top">
+
+<br />
+
+<table>
+
+<tr><td>
+
+<center>
+
+<h2 class="heading">Style Options:</h2>
+<div id="styleform" class="form"><table><form method="post" action="styles.php">
+	<input type="hidden" name="part" value="1" >
+	<tr><td>
+<input type="radio" name="style" value="1" checked="checked" >
+
+</td><td>
+<b>Pastel Hell</b>
+The default color scheme.</td></tr>
+	<tr><td>
+<input type="radio" name="style" value="2" >
+
+</td><td>
+<b>Black, White, and Red all over</b>
+Old style color scheme.</td></tr>
+	<tr><td>
+<input type="radio" name="style" value="3" >
+
+</td><td>
+<b>Jolly Rancher</b>
+A colorful and elegant style. Notes: Does not work in Netscape 4, link backgrounds do not show up in Opera.</td></tr>
+	<tr><td>
+<input type="radio" name="style" value="4" >
+
+</td><td>
+<b>Pastel Purgatory</b>
+A pastel color scheme, but not as heavy on the pastel colors as Pastel Hell.</td></tr>
+	<tr><td>
+<input type="radio" name="style" value="5" >
+
+</td><td>
+<b>Terminal</b>
+A color scheme emulating the old green and black monitors. Courtesy of Andrew Kensler.</td></tr>
+	<tr><td>
+<input type="radio" name="style" value="6" >
+
+</td><td>
+<b>Parchment</b>
+A light white-orange color scheme. Courtesy of Andrew Kensler.</td></tr>
+	<tr><td>
+<input type="radio" name="style" value="7" >
+
+</td><td>
+<b>Slate</b>
+by youngian. Use with Postmodern interface only</td></tr>
+	<tr><td>
+<input type="radio" name="style" value="8" >
+
+</td><td>
+<b>Libre</b>
+by youngian. Use with Postmodern interface only. Incompatible with Internet Explorer.</td></tr>
+	<tr><td>
+<input type="radio" name="style" value="custom" >
+
+</td><td>
+Custom Style Sheet</td></tr>
+		</table>
+		<input type="submit" value="Change">
+</form>
+</div>
+
+</center>
+
+</td></tr></table></td></tr></table>
+
+Do you read <a href="read.php?searchname=baldwint"  id="justupdatedlink">baldwint</a>, who just updated?<hr>	<hr>
+
+<div id="poweredby">
+<img src="images/logo-small.png" class="logo" width="120px" height="45px">
+<span>Powered by <a href="http://code.google.com/p/grinnellplans/">GrinnellPlans</a> r0, an opensource project. File a <a href="http://code.google.com/p/grinnellplans/issues/entry?comment=Username%3A+%5Bbaldwint%5D%0ARevision%3A+0%0AURL%3A+localhost%2F%7Etkb%2Fphplans%2Fstyles.php%0AUser-agent%3A+Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10_8_2%29+AppleWebKit%2F536.26.17+%28KHTML%2C+like+Gecko%29+Version%2F6.0.2+Safari%2F536.26.17%0A%0AHow+can+we+reproduce+the+problem%3F%0A1.+%0A2.+%0A3.+%0A%0AWhat+is+the+expected+output%3F+What+do+you+see+instead%3F%0A+">bug report</a> after taking a look at the <a href="http://code.google.com/p/grinnellplans/issues/list?sort=-id">recent bugs</a> to avoid duplicates.</span>
+</div>
+
+<p style="font-size: 80%">
+		<span>        Use of the GrinnellPlans service means you have accepted the <a href="http://www.grinnellplans.com/tos"> GrinnellPlans Terms of Service agreement</a>. If you do not accept and abide by this agreement, you may not use GrinnellPlans. This agreement is subject to change without notice, so you should periodically review the most up-to-date version. You may contact us at <a href="mailto:grinnellplans@gmail.com">grinnellplans@gmail.com</a>.</span>
+
+</body></html>

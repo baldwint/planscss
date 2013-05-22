@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<head>
+<title>Plans 3</title>
+
+	<link rel="stylesheet" type="text/css" href="styles/global.css">
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+
+</head>
+<body id="planspage_readplan" class="plan">
+
+<div id="wrapper">
+
+<div id="nav"><div>
+<div id="logo">
+<a href="index.php" >Home</a></div>
+<div  id="finger" class="form">
+<form method="get" action="read.php">
+	<div>
+	<div  class="form_prompt textinput">
+<input id="searchname" type="text" name="searchname" value="" >
+</div>
+	<button type="submit" value="Read" class="submitinput">Read</button>
+	</div>
+</form>
+</div>
+<div id="links"><h2>Links</h2>
+<ul  class="linkslist">
+	<li class="even first"><a href="edit.php"  id="mainlink_edit">Edit Plan</a></li>
+	<li class="odd"><a href="search.php"  id="mainlink_search">Search Plans</a></li>
+	<li class="even"><a href="customize.php"  id="mainlink_prefs">Preferences</a></li>
+	<li class="odd"><a href="quicklove.php"  class="opt_link">Quicklove</a></li>
+	<li class="even last"><a href="index.php?logout=1"  id="mainlink_logout">Log Out</a></li>
+</ul>
+</div>
+<div  id="autoread"><h2>Autoread List</h2>
+<ul>
+	<li class="autoreadlevel even first current"><div class="autoreadname">
+	<a href="setpriv.php?myprivl=1"  id="set_autoreadlev1" class="autoreadlink">Level 1</a>	<a href="setpriv.php?myprivl=1&amp;mark_as_read=1"  class="markasread" onclick ="return confirm('Are you sure you\'d like to mark all the Plans on level 1 as read?')">X</a></div>
+<ul>
+	<li class="autoreadentry even first"><a href="read.php?searchname=heckerni"  class="planlove">heckerni</a></li>
+	<li class="autoreadentry odd"><a href="read.php?searchname=lamberte"  class="planlove">lamberte</a></li>
+	<li class="autoreadentry even last"><a href="read.php?searchname=colussiv"  class="planlove">colussiv</a></li>
+</ul>
+</li>
+	<li class="autoreadlevel odd notcurrent"><div class="autoreadname">
+	<a href="setpriv.php?myprivl=2"  id="set_autoreadlev2" class="autoreadlink">Level 2</a>	<a href="setpriv.php?myprivl=2&amp;mark_as_read=1"  class="markasread" onclick ="return confirm('Are you sure you\'d like to mark all the Plans on level 2 as read?')">X</a></div>
+<ul>
+	<li class="autoreadentry even first last"><a href="read.php?searchname=youngian"  class="planlove">youngian</a></li>
+</ul>
+</li>
+	<li class="autoreadlevel even last notcurrent"><div class="autoreadname">
+	<a href="setpriv.php?myprivl=3"  id="set_autoreadlev3" class="autoreadlink">Level 3</a>	<a href="setpriv.php?myprivl=3&amp;mark_as_read=1"  class="markasread" onclick ="return confirm('Are you sure you\'d like to mark all the Plans on level 3 as read?')">X</a></div>
+</li>
+</ul>
+</div>
+</div></div>
+
+<div id="main"><div>
+
+<div  class="alertmessage">
+	<span class="title">No such user</span>
+	<span class="body">User <b>foo</b> does not exist.<br>However there are <b>1</b> names with foo in them.<br>These names are:</span>
+</div>
+<ul  id="partial_name_matches">
+	<li class="even first last"><a href="read.php?searchname=foodhouse"  class="planlove">foodhouse</a></li>
+</ul>
+<a href="search.php?mysearch=foo"  id="search_for_term">Search Plans for "foo"</a></div></div>
+
+<div id="footer">
+	<div id="justupdated">
+		<div>Do you read <a href="read.php?searchname=baldwint"  id="justupdatedlink">baldwint</a>, who just updated?</div>
+	</div>
+
+
+	<div id="poweredby"><div>
+		<img src="images/logo-small.png" class="logo" width="120px" height="45px">
+		<span>Powered by <a href="http://code.google.com/p/grinnellplans/">GrinnellPlans</a> r0, an opensource project. File a <a href="http://code.google.com/p/grinnellplans/issues/entry?comment=Username%3A+%5Bbaldwint%5D%0ARevision%3A+0%0AURL%3A+localhost%2F%7Etkb%2Fphplans%2Fread.php%3Fsearchname%3Dfoo%0AUser-agent%3A+Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10_8_2%29+AppleWebKit%2F536.26.17+%28KHTML%2C+like+Gecko%29+Version%2F6.0.2+Safari%2F536.26.17%0A%0AHow+can+we+reproduce+the+problem%3F%0A1.+%0A2.+%0A3.+%0A%0AWhat+is+the+expected+output%3F+What+do+you+see+instead%3F%0A+">bug report</a> after taking a look at the <a href="http://code.google.com/p/grinnellplans/issues/list?sort=-id">recent bugs</a> to avoid duplicates.</span>
+	</div></div>
+
+	<div id="legal"><div>
+		<span>        Use of the GrinnellPlans service means you have accepted the <a href="http://www.grinnellplans.com/tos"> GrinnellPlans Terms of Service agreement</a>. If you do not accept and abide by this agreement, you may not use GrinnellPlans. This agreement is subject to change without notice, so you should periodically review the most up-to-date version. You may contact us at <a href="mailto:grinnellplans@gmail.com">grinnellplans@gmail.com</a>.</span>
+	</div></div>
+</div>
+</div>
+
+</body></html>
