@@ -83,14 +83,16 @@ table.lowerpanel, div#links {
 div#nav {
   max-width: 180px;
   float: left;
+  margin-left: 5px;
 }
 
 div#footer {
     clear: left;
 }
 
-div.plan {
-    margin-left:190px;
+div#main {
+    margin-left:220px;
+    padding-top: 20px;
 }
 
 /* Fix for PRE double-spacing [bug 21] */
@@ -133,7 +135,7 @@ p.sub2, div#autoreadadd {
   border-color: #0f0;
 }
 
-input { 
+input, button {
   font-family: "Andale Mono", "Courier New", Courier, mono;
   background: #020;
   color: #8f8;
