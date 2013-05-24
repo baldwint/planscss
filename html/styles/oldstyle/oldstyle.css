@@ -1,3 +1,6 @@
+/* postmodern like modern */
+@import url('../modern.css');
+
 #af_loading {
   background: url("progress.gif");
   width: 16px;
