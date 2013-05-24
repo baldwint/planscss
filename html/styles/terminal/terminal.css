@@ -42,16 +42,55 @@ p.logo {
   padding: 0.4cm 2.25cm
 }
 
+/* Show an image for the logo in postmodern */
+#logo a {
+	display: block;
+	background: url("../../images/logo-small.png") no-repeat;
+	height: 70px;
+	width: 180px;
+	/* Scooch the text out of view */
+	text-indent: -9999px;
+}
+
 table.mainpanel {
   background: #000
 }
 
-table.lowerpanel {
+table.lowerpanel, div#links {
   color: #fff;
   background: #020;
   border-style: solid;
   border-width: 1px;
   border-color: #0f0;
+}
+
+#links, #autoread { padding: 1em;}
+ 
+/* no bullets for these lists */
+#links ul, #header ul, #autoread ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#links li, #autoread li {
+    margin-left: 1em;
+}
+
+#links h2 { display: none; }
+#autoread h2 { color: white; font-size: 16px; }
+
+div#nav {
+  max-width: 180px;
+  float: left;
+}
+
+div#footer {
+    clear: left;
+}
+
+div.plan {
+    margin-left:190px;
 }
 
 /* Fix for PRE double-spacing [bug 21] */
@@ -77,19 +116,7 @@ p.imagelev3 {
 */
 }
 
-p.main {
-  font-weight: bold
-}
-
-p.main2 {
-  font-weight: bold
-}
-
-p.main3 {
-  font-weight: bold
-}
-
-p.main4 {
+span.title, p.main, p.main2, p.main3, p.main4 {
   font-weight: bold;
 }
 
@@ -99,7 +126,7 @@ p.sub {
   border-width: thin
 }
 
-p.sub2 {
+p.sub2, div#autoreadadd {
   background: #020;
   border-style: solid;
   border-width: 1px;
