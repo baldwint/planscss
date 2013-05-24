@@ -8,7 +8,7 @@ Quickstart
 ----------
 
 1. Install PhantomJS. ``brew install phantomjs`` did it for me on a Mac.
-2. In this directory, run ``phantomjs screenshots.js`` (or ``make``).
+2. In this directory, run ``phantomjs screenshots.js`` (or ``make screenshots``).
 3. Screenshots are created in the ``screenshots`` subfolder, grouped
    by stylesheet.
 
@@ -30,12 +30,12 @@ Here's my workflow:
      for file in *.modern.html.png ; do mv $file `echo $file | sed 's/\(.*\.\)png/\1orig.png/'` ; done
 
  4. In ``screenshots.js``, comment out the sheets I'm not working on,
-    and run ``make`` again.
+    and run ``make screenshots`` again.
  5. Open an image comparison program (like Kaleidoscope) to keep tabs
     on the difference between
     ``foo.modern.html.orig.png``, 
     ``foo.modern.html.png``, and
     ``foo.postmodern.html.png``, 
-    while I edit the css file and habitually invoke ``make``.
+    while I edit the css file and habitually invoke ``make screenshots``.
 
 
