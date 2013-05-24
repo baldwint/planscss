@@ -36,16 +36,24 @@ solid  solid; border-width: thin; border-color: #ecaaa9; margin-bottom:
 2px; font-variant: none}
 
 /* Plan Of: Text */
-p.main {color: #A9AAEC; font-variant: small-caps}
+p.main, #header li.username span.title {
+  color: #A9AAEC; font-variant: small-caps
+}
 
 /* Last Login: Text */
-p.main2 {margin-left: 1cm; color: #99DC9A; font-variant: small-caps}
+p.main2, #header li.lastupdated span.title {
+  margin-left: 1cm; color: #99DC9A; font-variant: small-caps
+}
 
 /* Last Update: Text */
-p.main3 {margin-left: 2cm; color: #DC999A; font-variant: small-caps}
+p.main3, #header li.lastlogin span.title {
+  margin-left: 2cm; color: #DC999A; font-variant: small-caps
+}
 
 /* Name: Text */
-p.main4 {margin-left: 3cm; color: #DC9ADC; font-variant: small-caps}
+p.main4, #header li.planname span.title {
+  margin-left: 3cm; color: #DC9ADC; font-variant: small-caps
+}
 
 
 
