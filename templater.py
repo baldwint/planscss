@@ -7,7 +7,7 @@ Requires Jinja2 (install with `pip install jinja2`).
 
 import os
 from jinja2 import Template
-template = Template(open('index.html').read())
+template = Template(open('index.html.jinja2').read())
 
 # each stylesheet has its own folder within the build directory
 import json

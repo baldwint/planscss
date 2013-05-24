@@ -29,10 +29,10 @@
     <h2>{{ style }}</h2>
     <div>
         {% for page in pages %}
-        <a href='../previews/{{style}}/{{ page }}.postmodern.html'>
-        <img src='{{ style }}/{{ page }}.postmodern.html.png'
-        onmouseover="this.src='{{ style }}/{{ page }}.modern.html.png'"
-        onmouseout ="this.src='{{ style }}/{{ page }}.postmodern.html.png'" />
+        <a href='previews/{{style}}/{{ page }}.postmodern.html'>
+        <img src='screenshots/{{ style }}/{{ page }}.postmodern.html.png'
+        onmouseover="this.src='screenshots/{{ style }}/{{ page }}.modern.html.png'"
+        onmouseout ="this.src='screenshots/{{ style }}/{{ page }}.postmodern.html.png'" />
         </a>
         {% endfor %}
     </div>
