@@ -45,7 +45,7 @@ no-repeat;
     padding: 0.4cm 2.25cm
 }
 
-table.mainpanel {
+table.mainpanel, div#nav {
     background: #000
 }
 /*here 
