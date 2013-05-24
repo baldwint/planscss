@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <style type='text/css'>
+        a, a:visited {color: blue;}
+        a:hover {color: red;}
+        img {
+            width: 400px;
+            border:2px solid;
+            margin-right: 50px;
+            display: inline-block;
+            vertical-align:top;
+        }
+        div { white-space: nowrap; }
+    </style>
+</head>
+
+<body>
+
+    <h1>Plans builtin stylesheets: modern vs postmodern</h1>
+
+    <p>
+    Plans' built-in stylesheets need to be updated to work with the
+    new postmodern interface. Here is how they appear now. Mouse over
+    any image to see how it appears using the older modern interface.
+    </p>
+
+    {% for style in sheets %}
+    <h2>{{ style }}</h2>
+    <div>
+        {% for page in pages %}
+        <a href='#'>
+        <img src='{{ style }}/{{ page }}.postmodern.html.png'
+        onmouseover="this.src='{{ style }}/{{ page }}.modern.html.png'"
+        onmouseout ="this.src='{{ style }}/{{ page }}.postmodern.html.png'" />
+        </a>
+        {% endfor %}
+    </div>
+    {% endfor %}
+
+</body>
+</html>
+
