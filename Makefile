@@ -11,6 +11,7 @@ page:
 
 clean:
 	rm -rf screenshots
+	rm -rf previews
 	rm -rf index.html
 
 .PHONY: screenshots previews page

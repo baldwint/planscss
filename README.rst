@@ -7,10 +7,29 @@ tool to quickly compare their behavior across interfaces.
 Quickstart
 ----------
 
-1. Install PhantomJS. ``brew install phantomjs`` did it for me on a Mac.
-2. In this directory, run ``phantomjs screenshots.js`` (or ``make screenshots``).
+Generate preview files:
+
+1. In this directory, run ``python preview.py`` (or ``make previews``)
+2. Previews are created in the ``previews`` subfolder, grouped by
+   stylesheet.
+
+Generate screenshots:
+
+1. Install PhantomJS. ``brew install phantomjs`` did it for me on a
+   Mac, using homebrew_.
+2. In this directory, run ``phantomjs screenshots.js`` (or ``make
+   screenshots``).
 3. Screenshots are created in the ``screenshots`` subfolder, grouped
    by stylesheet.
+
+.. _homebrew: http://mxcl.github.io/homebrew/
+
+Generate overview page (optional):
+
+1. Install Jinja 2: ``pip install jinja2``.
+2. In this directory, run ``python templater.py > index.html``
+   (or ``make page``)
+
 
 Your Mission
 ------------
@@ -24,18 +43,21 @@ interface, without changing the original appearance under ``modern``.
 Here's my workflow:
 
  1. Do the quickstart.
- 2. Descend into the screenshot folder of the sheet I will work on.
- 3. Bulk change the filename extension::
+ 2. Choose a stylesheet to work on (say ``terminal``).
+    Save copies of the unmodified modern interface screenshots, to
+    keep tabs on regression::
 
+     cd screenshots/terminal
      for file in *.modern.html.png ; do mv $file `echo $file | sed 's/\(.*\.\)png/\1orig.png/'` ; done
 
- 4. In ``screenshots.js``, comment out the sheets I'm not working on,
+ 3. In ``sheets.json``, delete lines related to sheets I'm not working on,
     and run ``make screenshots`` again.
- 5. Open an image comparison program (like Kaleidoscope) to keep tabs
-    on the difference between
+ 4. Open some pages from ``previews/terminal`` in my web browser, and
+    start editing css files in ``html/styles`` so they look right.
+ 5. Habitually invoke ``make screenshots``, using an image comparison
+    program to keep tabs on the difference between
     ``foo.modern.html.orig.png``, 
     ``foo.modern.html.png``, and
-    ``foo.postmodern.html.png``, 
-    while I edit the css file and habitually invoke ``make screenshots``.
+    ``foo.postmodern.html.png``.
 
 
