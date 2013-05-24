@@ -11,3 +11,5 @@ page:
 
 clean:
 	rm -rf screenshots
+
+.PHONY: screenshots previews page
