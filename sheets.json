@@ -1,0 +1,10 @@
+{
+    "default": "styles/default/default.css",
+    "oldstyle": "styles/oldstyle/oldstyle.css",
+    "jolly": "styles/jolly/jolly.css",
+    "blue": "styles/blue/blue.css",
+    "terminal": "styles/terminal/terminal.css",
+    "parchment": "styles/parchment/parchment.css",
+    "slate": "styles/slate.css",
+    "libre": "styles/libre.css"
+}

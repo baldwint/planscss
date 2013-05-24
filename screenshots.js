@@ -13,18 +13,11 @@ var interfaces = ['modern', 'postmodern', 'centered'];
 var pages = ['customize', 'edit', 'editsubmit', 'nosuchuser',
              'read', 'search', 'styles'];
 
-// sheets
-var sheets = {
-    'default': 'styles/default/default.css',
-    'oldstyle': 'styles/oldstyle/oldstyle.css',
-    'jolly': 'styles/jolly/jolly.css',
-    'blue': 'styles/blue/blue.css',
-    'terminal': 'styles/terminal/terminal.css',
-    'parchment': 'styles/parchment/parchment.css',
-    //postmodern
-    'slate': 'styles/slate.css',
-    'libre': 'styles/libre.css',
-}
+// sheets to render
+var fs = require('fs');
+f = fs.open('sheets.json', "r");
+console.log(JSON.parse(f.read()));
+var sheets = JSON.parse(f.read());
 
 // set up phantom
 var page = require('webpage').create()
