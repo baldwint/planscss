@@ -16,20 +16,21 @@ Generate preview files:
 Generate screenshots:
 
 1. Install PhantomJS. ``brew install phantomjs`` did it for me on a
-   Mac, using homebrew_.
+   Mac, using Homebrew_.
 2. In this directory, run ``phantomjs screenshots.js`` (or ``make
    screenshots``).
 3. Screenshots are created in the ``screenshots`` subfolder, grouped
    by stylesheet.
 
-.. _homebrew: http://mxcl.github.io/homebrew/
+.. _Homebrew: http://mxcl.github.io/homebrew/
 
 Generate overview page (optional):
 
-1. Install Jinja 2: ``pip install jinja2``.
+1. Install Jinja_: ``pip install jinja2``.
 2. In this directory, run ``python templater.py > index.html``
    (or ``make page``)
 
+.. _Jinja: http://jinja.pocoo.org/
 
 Your Mission
 ------------
