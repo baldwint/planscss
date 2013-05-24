@@ -1,0 +1,54 @@
+/* Mixin CSS to approximate the look of the 'modern' interface in
+ * the newer 'postmodern' interface.
+ *
+ * 24 May 2013 baldwint
+ */
+
+/* Show an image for the logo */
+#logo a {
+	display: block;
+	background: url("../images/logo-small.png") no-repeat;
+	height: 70px;
+	width: 180px;
+	/* Scooch the text out of view */
+	text-indent: -9999px;
+}
+
+#links, #autoread { padding: 1em;}
+ 
+/* no bullets for these lists */
+#links ul, #header ul, #autoread ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#links li, #autoread li {
+  margin-left: 1em;
+}
+
+#links h2 { display: none; }
+#autoread h2 { color: white; font-size: 16px; }
+
+div#nav {
+  max-width: 180px;
+  float: left;
+  margin-left: 5px;
+}
+
+div#footer {
+    clear: left;
+}
+
+div#main {
+    margin-left:220px;
+    padding-top: 20px;
+}
+
+/* header styling */
+#header li { margin-top: 0.2em; }
+#header span.title { font-weight: bold; }
+#header span.short { display: none; }
+#header li.planname span.value { text-decoration: underline; }
+
+
