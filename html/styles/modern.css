@@ -4,6 +4,33 @@
  * 24 May 2013 baldwint
  */
 
+/* starter defaults */
+@import url('starter_defaults.css');
+
+/* stop floating form fields before we all get a headache */
+.formitemset .form_prompt, .formitemset .formitemset_label {
+    float: none;
+    clear: none;
+    display: inline;
+}
+.formitemset, .form_prompt {
+	float: none;
+    clear: none;
+}
+#autoreadadd .submitinput {
+    float: none;
+    clear: none;
+    display: inline;
+}
+
+/* put autoreadadd in the middle */
+#autoreadadd {
+  text-align: center;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 1em;
+}
+
 /* Show an image for the logo */
 #logo a {
 	display: block;
@@ -48,7 +75,5 @@ div#main {
 /* header styling */
 #header li { margin-top: 0.2em; }
 #header span.title { font-weight: bold; }
-#header span.short { display: none; }
 #header li.planname span.value { text-decoration: underline; }
-
 
