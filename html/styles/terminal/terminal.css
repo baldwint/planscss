@@ -80,6 +80,8 @@ p.imagelev3 {
 */
 }
 
+#autoread h2 { color: white; }
+
 p.main, p.main2, p.main3, p.main4 {
   font-weight: bold;
 }
