@@ -61,9 +61,11 @@ p.main4, #header li.planname span.title {
 /* ###Regular link stuff */
 
 /* Set the regular image */
-p.imagelev1 { background: #ffffff
-url("right.gif")
-no-repeat; padding: 0.0cm 0.2cm}
+p.imagelev1, #nav li {
+  background: #ffffff url("right.gif") no-repeat;
+}
+p.imagelev1 { padding: 0.0cm 0.2cm }
+#nav li     { padding: 0.0cm 0.8cm; margin-left: -0.4cm; }
 
 /* Set regular links */
 a:link {  text-decoration: none; color: #a9aaec; font-variant: small-caps;
@@ -97,25 +99,40 @@ font-family: times; background: #f1f1f1}
 /* ###Sub category stuff */
 
 /* Set the sub image */
-p.imagelev2 { background: #ffffff
-url("right2.gif")
-no-repeat; padding: 0.0cm 0.2cm}
+p.imagelev2, #autoread li {
+  background: #ffffff url("right2.gif") no-repeat;
+}
+p.imagelev2, { padding: 0.0cm 0.2cm }
+#autoread li { padding: 0.0cm 0.8cm; margin-left: -0.4cm; }
 
 /* Set the link for sub categories */
-a.lev2:link {  text-decoration: none; color: #50BED6; font-variant:
-small-caps; background-color: #ffffff; font-family: times}
+a.lev2:link, li.autoreadlevel a:link {
+  text-decoration: none;
+  color: #50BED6;
+  font-variant: small-caps;
+  background-color: #ffffff;
+  font-family: times
+}
 
 /* Set visited links for sub categories */
-a.lev2:visited {  text-decoration: none; color: #50BED6; font variant:
-small-caps;
-font-weight: bold; background-color: #ffffff;font-family: times;}
+a.lev2:visited, li.autoreadlevel a:visited {
+  text-decoration: none;
+  color: #50BED6;
+  font variant: small-caps;
+  font-weight: bold;
+  background-color: #ffffff;
+  font-family: times;
+}
 
 /* Set hover links for subcategories */
-a.lev2:hover {  color: #ffffff; text-decoration: underline;
-background-color: #50BED6}
+a.lev2:hover, li.autoreadlevel a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+  background-color: #50BED6
+}
 
 /* Set non-click text for subcategories */
-p.lev2 {color: #D68080;font-variant: small-caps;}
+p.lev2, li.autoreadlevel {color: #D68080;font-variant: small-caps;}
 
 
 
@@ -123,21 +140,37 @@ p.lev2 {color: #D68080;font-variant: small-caps;}
 /* ###Sub-sub category stuff */
 
 /* Set the sub-sub image */
-p.imagelev3 { background: #ffffff
-url("right3.gif")
-no-repeat; padding: 0.0cm 0.2cm}
+p.imagelev3, #autoread li.autoreadentry {
+  background: #ffffff url("right3.gif") no-repeat;
+}
+p.imagelev3                { padding: 0.0cm 0.2cm }
+#autoread li.autoreadentry { padding: 0.0cm 0.8cm; margin-left: -0.4cm; }
 
 /* Set regular links for sub-sub category */
-a.lev3:link {  text-decoration: none; color: #2EDFB4; font-variant:
-small-caps; background-color: #ffffff; font-family: times}
+a.lev3:link, #autoread li.autoreadentry a:link {
+  text-decoration: none;
+  color: #2EDFB4;
+  font-variant: small-caps;
+  background-color: #ffffff;
+  font-family: times
+}
 
 /* Set visited links for sub-sub category */
-a.lev3:visited {  text-decoration: none; color: #2EDFB4; font-variant: small-caps;
-font-weight: bold; background-color: #ffffff;font-family: times;}
+a.lev3:visited, #autoread li.autoreadentry a:visited  {
+  text-decoration: none;
+  color: #2EDFB4;
+  font-variant: small-caps;
+  font-weight: bold;
+  background-color: #ffffff;
+  font-family: times;
+}
 
 /* Set hover links for sub-sub category */
-a.lev3:hover {  color: #ffffff; text-decoration: underline;
-background-color: #2EDFB4}
+a.lev3:hover, #autoread li.autoreadentry a:hover  {
+  color: #ffffff;
+  text-decoration: underline;
+  background-color: #2EDFB4
+}
 
 
 /***************
