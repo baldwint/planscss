@@ -9,7 +9,7 @@
 var fs = require('fs');
 
 // interfaces x pages
-var interfaces = ['modern', 'postmodern', 'centered'];
+var interfaces = ['modern', 'postmodern', 'centered', 'postcentered'];
 p = fs.open('pages.json', "r");
 var pages = JSON.parse(p.read());
 

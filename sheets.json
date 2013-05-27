@@ -1,10 +1,18 @@
 {
-    "default": "styles/default/default.css",
-    "oldstyle": "styles/oldstyle/oldstyle.css",
-    "jolly": "styles/jolly/jolly.css",
-    "blue": "styles/blue/blue.css",
-    "terminal": "styles/terminal/terminal.css",
-    "parchment": "styles/parchment/parchment.css",
-    "slate": "styles/slate.css",
-    "libre": "styles/libre.css"
+    "default":      {"modern": "styles/default/default.css",
+                   "centered": "styles/default/default.css"},
+   "oldstyle":      {"modern": "styles/oldstyle/oldstyle.css",
+                   "centered": "styles/oldstyle/oldstyle.css"},
+      "jolly":      {"modern": "styles/jolly/jolly.css",
+                   "centered": "styles/jolly/jolly.css"},
+       "blue":      {"modern": "styles/blue/blue.css",
+                   "centered": "styles/blue/blue.css"},
+   "terminal":      {"modern": "styles/terminal/terminal.css",
+                   "centered": "styles/terminal/terminal.css"},
+  "parchment":      {"modern": "styles/parchment/parchment.css",
+                   "centered": "styles/parchment/parchment.css"},
+      "slate":      {"modern": "styles/slate.css",
+                   "centered": "styles/slate.css"},
+      "libre":      {"modern": "styles/libre.css",
+                   "centered": "styles/libre.css"}
 }
