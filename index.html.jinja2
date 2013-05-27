@@ -11,7 +11,10 @@
             display: inline-block;
             vertical-align:top;
         }
-        div { white-space: nowrap; }
+        div {
+            white-space: nowrap;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 
@@ -33,6 +36,15 @@
         <img src='screenshots/{{ style }}/{{ page }}.postmodern.html.png'
         onmouseover="this.src='screenshots/{{ style }}/{{ page }}.modern.html.png'"
         onmouseout ="this.src='screenshots/{{ style }}/{{ page }}.postmodern.html.png'" />
+        </a>
+        {% endfor %}
+    </div>
+    <div>
+        {% for page in pages %}
+        <a href='previews/{{style}}/{{ page }}.postcentered.html'>
+        <img src='screenshots/{{ style }}/{{ page }}.postcentered.html.png'
+        onmouseover="this.src='screenshots/{{ style }}/{{ page }}.centered.html.png'"
+        onmouseout ="this.src='screenshots/{{ style }}/{{ page }}.postcentered.html.png'" />
         </a>
         {% endfor %}
     </div>

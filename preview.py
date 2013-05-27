@@ -15,11 +15,17 @@ for s in sheets:
     except OSError:
         pass # already exists
 
-pages = [s for s in os.listdir('html')
-         if os.path.splitext(s)[1] == '.html']
+interfaces = ['modern', 'centered'] # postmodern is hardcoded
+pages = json.load(open('pages.json'))
 
-for page in pages:
+def insert_placeholder(page):
+    """
+    Inserts a blank line at the end of the header.
 
+    Returns lines as a list of strings, and the index
+    of the blank line.
+
+    """
     with open(os.path.join('html', page)) as fl:
         lines = fl.readlines()
 
@@ -27,14 +33,39 @@ for page in pages:
     i = lines.index('</head>\n')
     lines.insert(i, '\n') # insert placeholder
 
-    for style in sheets:
+    return lines, i
 
-        # insert stylesheet line
-        path = os.path.join(os.pardir, os.pardir, 'html', sheets[style])
-        lines[i] = ('<link rel="stylesheet" type="text/css"'
-                    ' href="{path}" />').format(path=path)
+for page in pages:
 
-        # write out to file
-        out = os.path.join('previews', style, page)
-        with open(out, 'w') as fl:
-            fl.writelines(lines)
+    # load postmodern version
+    newpage = '%s.%s.html' % (page, 'postmodern')
+    newlines, ni = insert_placeholder(newpage)
+
+    for interface in interfaces:
+
+        # load modern or centered version
+        oldpage = '%s.%s.html' % (page, interface)
+        oldlines, oi = insert_placeholder(oldpage)
+
+        for style, stylepath in sheets.iteritems():
+
+            # insert stylesheet line to both pages
+            path = os.path.join(os.pardir, os.pardir,
+                                'html', stylepath[interface])
+            link =     ('<link rel="stylesheet" type="text/css"'
+                        ' href="{path}" />').format(path=path)
+
+            newlines[ni] = link
+            oldlines[oi] = link
+
+            # write old file out
+            out = os.path.join('previews', style,
+                               '%s.%s.html' % (page, interface))
+            with open(out, 'w') as fl:
+                fl.writelines(oldlines)
+
+            # write postmodern page out
+            out = os.path.join('previews', style,
+                               '%s.%s.html' % (page, 'post' + interface))
+            with open(out, 'w') as fl:
+                fl.writelines(newlines)

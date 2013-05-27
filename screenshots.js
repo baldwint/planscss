@@ -3,20 +3,18 @@
 //
 // usage: phantomjs screenshots.js
 //
-// known bug: one of the screenshots (the one corresponding to the
-// pairing of the first interface with the first page, as ordered in
-// the lists defined on the next line) always appears unstyled.
-// I have no idea why this is.
+// dependency: python previews.py must be run prior to this script.
+
+// fs module
+var fs = require('fs');
 
 // interfaces x pages
-var interfaces = ['modern', 'postmodern', 'centered'];
-var pages = ['customize', 'edit', 'editsubmit', 'nosuchuser',
-             'read', 'search', 'styles'];
+var interfaces = ['modern', 'postmodern', 'centered', 'postcentered'];
+p = fs.open('pages.json', "r");
+var pages = JSON.parse(p.read());
 
 // sheets to render
-var fs = require('fs');
 f = fs.open('sheets.json', "r");
-console.log(JSON.parse(f.read()));
 var sheets = JSON.parse(f.read());
 
 // set up phantom
@@ -32,7 +30,6 @@ for (var j in pages) {
                 'interf': interfaces[i],
                 'page': pages[j],
                 'style': s,
-                'stylepath': sheets[s],
             });
         }
     }
@@ -49,15 +46,7 @@ var interval = setInterval(function() {
         var fn = shot.page + '.' + shot.interf + '.html';
         console.log('Rendering: ' + fn + ' in ' + shot.style);
         // load html file
-        page.open('html/' + fn, function() {
-            // load css file
-            page.evaluate(function(filename) {
-                var link = document.createElement('link');
-                link.setAttribute("rel", "stylesheet");
-                link.setAttribute("type", "text/css");
-                link.setAttribute("href", filename);
-                document.getElementsByTagName("head")[0].appendChild(link);
-            }, shot.stylepath);
+        page.open('previews/' + shot.style + '/' + fn, function() {
             // render png
             page.render('screenshots/' + shot.style + '/' + fn + ".png");
             console.log('done.');
