@@ -64,7 +64,7 @@ div#nav {
 }
 
 div#footer {
-    clear: left;
+    clear: both;
 }
 
 div#main {
