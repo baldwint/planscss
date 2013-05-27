@@ -15,10 +15,11 @@ for s in sheets:
     except OSError:
         pass # already exists
 
-pages = [s for s in os.listdir('html')
-         if os.path.splitext(s)[1] == '.html']
+interfaces = ['modern', 'centered', 'postmodern']
+pages = json.load(open('pages.json'))
+paths = ['%s.%s.html' % (p, i) for p in pages for i in interfaces]
 
-for page in pages:
+for page in paths:
 
     with open(os.path.join('html', page)) as fl:
         lines = fl.readlines()
