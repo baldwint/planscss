@@ -18,7 +18,6 @@ sheets = json.load(
     ).keys()
 
 # pages to show
-pages = ['read', 'edit', 'search', 'styles',
-         'editsubmit', 'nosuchuser', 'customize']
+pages = json.load(open('pages.json'))
 
 print template.render(sheets=sheets, pages=pages)

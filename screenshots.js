@@ -5,15 +5,16 @@
 //
 // dependency: python previews.py must be run prior to this script.
 
+// fs module
+var fs = require('fs');
+
 // interfaces x pages
 var interfaces = ['modern', 'postmodern', 'centered'];
-var pages = ['customize', 'edit', 'editsubmit', 'nosuchuser',
-             'read', 'search', 'styles'];
+p = fs.open('pages.json', "r");
+var pages = JSON.parse(p.read());
 
 // sheets to render
-var fs = require('fs');
 f = fs.open('sheets.json', "r");
-console.log(JSON.parse(f.read()));
 var sheets = JSON.parse(f.read());
 
 // set up phantom
