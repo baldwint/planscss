@@ -17,7 +17,8 @@ sheets = json.load(
         object_pairs_hook=OrderedDict
     ).keys()
 
-# pages to show. exclude customize since that screenshot is wrong
-pages = ['read', 'edit', 'search', 'styles', 'editsubmit', 'nosuchuser']
+# pages to show
+pages = ['read', 'edit', 'search', 'styles',
+         'editsubmit', 'nosuchuser', 'customize']
 
 print template.render(sheets=sheets, pages=pages)

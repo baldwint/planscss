@@ -1,6 +1,6 @@
 all: screenshots previews page
 
-screenshots:
+screenshots: previews
 	phantomjs screenshots.js
 
 previews:

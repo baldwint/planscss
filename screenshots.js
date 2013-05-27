@@ -3,10 +3,7 @@
 //
 // usage: phantomjs screenshots.js
 //
-// known bug: one of the screenshots (the one corresponding to the
-// pairing of the first interface with the first page, as ordered in
-// the lists defined on the next line) always appears unstyled.
-// I have no idea why this is.
+// dependency: python previews.py must be run prior to this script.
 
 // interfaces x pages
 var interfaces = ['modern', 'postmodern', 'centered'];
@@ -32,7 +29,6 @@ for (var j in pages) {
                 'interf': interfaces[i],
                 'page': pages[j],
                 'style': s,
-                'stylepath': sheets[s],
             });
         }
     }
@@ -49,15 +45,7 @@ var interval = setInterval(function() {
         var fn = shot.page + '.' + shot.interf + '.html';
         console.log('Rendering: ' + fn + ' in ' + shot.style);
         // load html file
-        page.open('html/' + fn, function() {
-            // load css file
-            page.evaluate(function(filename) {
-                var link = document.createElement('link');
-                link.setAttribute("rel", "stylesheet");
-                link.setAttribute("type", "text/css");
-                link.setAttribute("href", filename);
-                document.getElementsByTagName("head")[0].appendChild(link);
-            }, shot.stylepath);
+        page.open('previews/' + shot.style + '/' + fn, function() {
             // render png
             page.render('screenshots/' + shot.style + '/' + fn + ".png");
             console.log('done.');
