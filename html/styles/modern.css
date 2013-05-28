@@ -41,7 +41,10 @@
 	text-indent: -9999px;
 }
 
-#links, #autoread { padding: 1em;}
+#links, #autoread {
+  padding: 1em;
+  margin-top: 1em;
+}
  
 /* no bullets for these lists */
 #links ul, #header ul, #autoread ul {
@@ -52,6 +55,7 @@
 
 #links li, #autoread li {
   margin-left: 1em;
+  margin-top: 0.3em;
 }
 
 #links h2 { display: none; }
@@ -61,6 +65,7 @@ div#nav {
   max-width: 180px;
   float: left;
   margin-left: 5px;
+  padding:5px;
 }
 
 div#footer {

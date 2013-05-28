@@ -36,7 +36,7 @@ solid  solid; border-width: thin; border-color: #ecaaa9; margin-bottom:
 2px; font-variant: none}
 
 /* Plan Of: Text */
-p.main, #header li.username span.title {
+p.main, #autoread h2, #header li.username span.title {
   color: #A9AAEC; font-variant: small-caps
 }
 
