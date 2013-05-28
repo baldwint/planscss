@@ -1,7 +1,10 @@
-["customize",
+["read",
 "edit",
+"search",
 "editsubmit",
 "nosuchuser",
-"read",
-"search",
-"styles"]
+"customize",
+"styles",
+"board_show",
+"board_messages",
+"board_submit"]
