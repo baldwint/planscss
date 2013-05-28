@@ -25,3 +25,6 @@ div#links {
   margin-top: 0em;
   padding-top: 2em;
  }
+
+/* rightmost div looks nice if it's the same width */
+div#autoread { width: 160px; }
