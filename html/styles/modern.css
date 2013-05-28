@@ -23,6 +23,28 @@
     display: inline;
 }
 
+/* notes board also has some overzealous floating */
+#notes_new_thread{
+  float: none;
+  display: block;
+  margin-bottom: 1em;
+}
+.notes_post_content {
+  clear: none;
+  margin-bottom: 1em;
+}
+.notes_post_header .post_id,
+.notes_post_header .post_author,
+.notes_post_header .post_date {
+  float: none;
+  display: inline-block;
+}
+/*.notes_post_header .post_votes {
+ * float: none;
+ * display: inline-block;
+ * }
+ */
+
 /* put autoreadadd in the middle */
 #autoreadadd {
   text-align: center;
@@ -48,7 +70,7 @@
 }
  
 /* no bullets for these lists */
-#links ul, #header ul, #autoread ul {
+#links ul, #header ul, #autoread ul, ul#notes_thread {
   margin: 0;
   padding: 0;
   list-style: none;
