@@ -82,3 +82,5 @@ div#main {
 #header span.title { font-weight: bold; }
 #header li.planname span.value { text-decoration: underline; }
 
+/* edit area */
+textarea#edit_textarea { width: 98%; }
