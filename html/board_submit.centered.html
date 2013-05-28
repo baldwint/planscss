@@ -1,0 +1,142 @@
+<html>
+<head>
+<META NAME="ROBOTS" CONTENT="NOARCHIVE">
+
+<title>Plans 3 - Notes</title>
+
+	<link rel="stylesheet" type="text/css" href="styles/legacy_globals.css" />
+	<link rel="stylesheet" type="text/css" href="styles/global.css" />
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+
+</head>
+<body>
+<!-- body: planspage_board_submit class: notes -->
+
+<table width="100%" cellspacing="0" cellpadding="0" class="main">
+<tr>
+<td valign="top" align="left" class="left" width="12%">
+<table class="mainpanel"><tr><td>
+<p class="logo">&nbsp;</p>
+<Form action="read.php" method="GET">
+	<input type="text" name="searchname" value="" />
+	<br>
+	<input type="submit" name="" value="Read" />
+	</form>
+
+<table class="lowerpanel">
+<tr>
+<td><p class="imagelev1">&nbsp;</p></td><td></td><td></td>
+<td><a href="edit.php"  class="main">edit plan</a></td>
+</tr>
+
+<tr>
+<td><p class="imagelev1">&nbsp;</p></td><td></td><td></td>
+<td><a href="search.php"  class="main">search plans</a></td>
+</tr>
+
+<tr>
+<td><p class="imagelev1">&nbsp;</p></td><td></td><td></td>
+<td><a href="customize.php"  class="main">preferences</a></td>
+</tr>
+
+<tr>
+<td><p class="imagelev1">&nbsp;</p></td><td></td><td></td>
+<td><a href="board_show.php"  class="main">notes</a></td>
+</tr>
+
+<tr>
+<td><p class="imagelev1">&nbsp;</p></td><td></td><td></td>
+<td><a href="index.php?logout=1"  class="main">log out</a></td>
+</tr>
+
+<tr><td><br></td><td><br></td><td><br></td><td><br></td></tr>
+
+</table>
+</td></tr></table>
+</td>
+
+<td valign="top">
+
+<br />
+
+<table>
+
+<tr><td>
+
+
+<div id="notesform" class="form"><table><form method="post" action="board_submit.php">
+	<tr><td>
+<b>Thread Title:</b>
+
+</td><td>
+<input type="text" name="threadtitle" value="" >
+</td></tr>
+	<input type="hidden" name="newthread" value="1" >
+	<tr><td>
+<b>Message Title:</b>
+
+</td><td>
+<input type="text" name="messagetitle" value="" >
+</td></tr>
+	<tr><td>
+<b>Message Contents:</b>
+
+</td><td>
+<textarea name="messagecontents" rows="14" cols="70"></textarea>
+</td></tr>
+	<input type="hidden" name="threadid" value="" >
+	<input type="hidden" name="submit" value="1" >
+		</table>
+		<input type="submit" value="Submit Message">
+</form>
+</div>
+
+
+</td></tr></table></td>
+
+<td valign="top" align="left" class="right" width="22%">
+<table class="mainpanel"><tr><td>
+<table class="lowerpanel">
+<tr><td><p class="imagelev1">&nbsp;</p></td><td></td><td></td>
+
+<td><p class="main">auto read list</p></td>
+</tr>
+
+</table>
+<table>
+	
+<tr><td></td><td><p class="imagelev2">&nbsp;</p></td><td></td>
+<td><a href="setpriv.php?myprivl=1" class="lev2">level 1</a>
+</td>
+<td><a onClick ="  return confirm('Are you sure you\'d like to mark all the Plans on level 1 as read?')" href="setpriv.php?myprivl=1&mark_as_read=1">X</a></td></tr>
+
+</tr>
+	
+<tr><td></td><td><p class="imagelev2">&nbsp;</p></td><td></td>
+<td><a href="setpriv.php?myprivl=2" class="lev2">level 2</a>
+</td>
+</tr>
+	
+<tr><td></td><td><p class="imagelev2">&nbsp;</p></td><td></td>
+<td><a href="setpriv.php?myprivl=3" class="lev2">level 3</a>
+</td>
+</tr>
+
+</table>
+</td></tr></table>
+</td>
+
+</tr></table>
+
+Do you read <a href="read.php?searchname=css"  id="justupdatedlink">css</a>, who just updated?<hr>	<hr>
+
+<div id="poweredby">
+<img src="images/logo-small.png" class="logo" width="120px" height="45px">
+<span>Powered by <a href="http://code.google.com/p/grinnellplans/">GrinnellPlans</a> r0, an opensource project. File a <a href="http://code.google.com/p/grinnellplans/issues/entry?comment=Username%3A+%5Bleesamue%5D%0ARevision%3A+0%0AURL%3A+localhost%2F%7Etkb%2Fphplans%2Fboard_submit.php%3Fnewthread%3D1%0AUser-agent%3A+Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10_8_2%29+AppleWebKit%2F536.26.17+%28KHTML%2C+like+Gecko%29+Version%2F6.0.2+Safari%2F536.26.17%0A%0AHow+can+we+reproduce+the+problem%3F%0A1.+%0A2.+%0A3.+%0A%0AWhat+is+the+expected+output%3F+What+do+you+see+instead%3F%0A+">bug report</a> after taking a look at the <a href="http://code.google.com/p/grinnellplans/issues/list?sort=-id">recent bugs</a> to avoid duplicates.</span>
+</div>
+
+<p style="font-size: 80%">
+		<span>        Use of the GrinnellPlans service means you have accepted the <a href="http://www.grinnellplans.com/tos"> GrinnellPlans Terms of Service agreement</a>. If you do not accept and abide by this agreement, you may not use GrinnellPlans. This agreement is subject to change without notice, so you should periodically review the most up-to-date version. You may contact us at <a href="mailto:grinnellplans@gmail.com">grinnellplans@gmail.com</a>.</span>
+
+</body></html>
