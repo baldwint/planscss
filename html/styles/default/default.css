@@ -176,13 +176,13 @@ a.lev3:hover, #autoread li.autoreadentry a:hover  {
 /***************
  * Notes Board *
  ***************/
-.noteslight {
+.noteslight, #notes_board tr.even {
   background: #eee;   
   border-style: solid;
   border-width: 1px;
   border-color: #a9aaec;
 }            
-.notesdark {
+.notesdark, #notes_board tr.odd {
   background: #e9eaff;   
   border-style: solid;
   border-width: 1px;  
