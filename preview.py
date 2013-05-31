@@ -53,7 +53,7 @@ for page in pages:
             path = os.path.join(os.pardir, os.pardir,
                                 'html', stylepath[interface])
             link =     ('<link rel="stylesheet" type="text/css"'
-                        ' href="{path}" />').format(path=path)
+                        ' href="{path}" />\n').format(path=path)
 
             newlines[ni] = link
             oldlines[oi] = link
