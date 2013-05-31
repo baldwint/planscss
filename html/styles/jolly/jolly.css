@@ -148,13 +148,13 @@ a.onplan:visited {
 /***************
  * Notes Board *
  ***************/
-.noteslight {
+.noteslight, #notes_board tr.even, #notes_thread li.even {
   background: #f3f3f3;
   border-style: solid;
   border-width: 1px;
   border-color: #74a;
 }
-.notesdark {
+.notesdark, #notes_board tr.odd, #notes_thread li.odd {
   background: #f3fff3;
   border-style: solid;
   border-width: 1px;
