@@ -64,6 +64,9 @@ a.main, #links a {
 a.main:hover, #links a:hover {
   background: url(darkbluepill.jpg) no-repeat;
 }
+#nav li {
+  margin-left: 0;
+}
 /********************
  * Top of plan info *
  ********************/
@@ -85,7 +88,8 @@ p.main, p.main2, p.main3, p.main4,
 /******************
  * Autofinger nav *
  ******************/
-p.lev2, a.lev2, a.lev3 {
+p.lev2, a.lev2, a.lev3,
+a.autoreadlink, li.autoreadentry a {
   background: url(lightgreenpill.jpg) no-repeat;
   width: 150px;
   height: 24px;
@@ -99,13 +103,16 @@ p.lev2, a.lev2, a.lev3 {
 a.lev2, a.lev3 {
   display: block;
 }
-a.lev2:hover {
+#autoread a {
+  display: inline-block;
+}
+a.lev2:hover, li.autoreadlevel a:hover {
   background: url(darkgreenpill.jpg) no-repeat;
 }
-a.lev3 {
+a.lev3, #autoread li.autoreadentry a {
   font-weight: normal;
 }
-a.lev3:hover {
+a.lev3:hover, #autoread li.autoreadentry a:hover {
   background: url(darkgreenpill.jpg) no-repeat;
 }
 /*****************
