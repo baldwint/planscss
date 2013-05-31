@@ -26,13 +26,13 @@ p.logo {
   width: 150px;
   height: 75px;
 }
-table.main {
+table.main, div#wrapper {
  bgcolor: #fff;
   background: url(stripes.jpg) repeat;
   border: 1px #CCC solid;
   padding: 10px;
 }
-td.left {
+td.left, div#nav {
   border: #000 solid;
   border-width: 0px 1px 0px 0px;
 }
@@ -59,7 +59,7 @@ hr {
 /*************
  * Nav links *
  *************/
-a.main {
+a.main, #links a {
 
   display: block;
   background: url(blueborder.jpg) no-repeat;
@@ -73,14 +73,13 @@ a.main {
   text-align: center;
   color: #000;
 }
-a.main:hover {
+a.main:hover, #links a:hover {
   background: url(bluesolid.jpg) no-repeat;
 }
 /********************
  * Top of plan info *
  ********************/
-p.main {
-  background: url(greysolid.jpg) no-repeat;
+p.main, p.main2, p.main3, p.main4 {
   width: 150px;
   height: 24px;
   font-family: Geneva, Arial, Helvetica, san-serif;
@@ -90,42 +89,18 @@ p.main {
   text-decoration: none;
   text-align: center;
   color: #000;
+}
+p.main {
+  background: url(greysolid.jpg) no-repeat;
 }
 p.main2 {
   background: url(bluesolid.jpg) no-repeat;
-  width: 150px;
-  height: 24px;
-  font-family: Geneva, Arial, Helvetica, san-serif;
-  font-weight: bold;
-  font-variant: small-caps;
-  font-size: x-small;
-  text-decoration: none;
-  text-align: center;
-  color: #000;
 }
 p.main3 {
   background: url(yellowsolid.jpg) no-repeat;
-  width: 150px;
-  height: 24px;
-  font-family: Geneva, Arial, Helvetica, san-serif;
-  font-weight: bold;
-  font-variant: small-caps;
-  font-size: x-small;
-  text-decoration: none;
-  text-align: center;
-  color: #000;
 }
 p.main4 {
   background: url(redsolid.jpg) no-repeat;
-  width: 150px;
-  height: 24px;
-  font-family: Geneva, Arial, Helvetica, san-serif;
-  font-weight: bold;
-  font-variant: small-caps;
-  font-size: x-small;
-  text-decoration: none;
-  text-align: center;
-  color: #000;
 }
 /******************
  * Autofinger nav *
