@@ -105,7 +105,7 @@ p.main4 {
 /******************
  * Autofinger nav *
  ******************/
-p.lev2 {
+p.lev2, a.lev2, a.lev3 {
   background: url(yellowborder.jpg) no-repeat;
   width: 150px;
   height: 24px;
@@ -117,34 +117,15 @@ p.lev2 {
   text-align: center;
   color: #000;
 }
-a.lev2 {
+a.lev2, a.lev3 {
   display: block;
-  background: url(yellowborder.jpg) no-repeat;
-  width: 150px;
-  height: 24px;
-  font-family: Geneva, Arial, Helvetica, san-serif;
-  font-weight: bold;
-  font-variant: small-caps;
-  font-size: x-small;
-  text-decoration: none;
-  text-align: center;
-  color: #000;
 }
 a.lev2:hover {
   background: url(yellowsolid.jpg) no-repeat;
 }
 a.lev3 {
-  display: block;
   background: url(redsolid.jpg) no-repeat;
-  width: 150px;
-  height: 24px;
-  font-family: Geneva, Arial, Helvetica, san-serif;
   font-weight: normal;
-  font-variant: small-caps;
-  font-size: x-small;
-  text-decoration: none;
-  text-align: center;
-  color: #000;
 }
 a.lev3:hover {
   background: url(redborder.jpg) no-repeat;
