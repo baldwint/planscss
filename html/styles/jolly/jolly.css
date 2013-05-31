@@ -60,6 +60,8 @@ a.main, #links a {
   text-decoration: none;
   text-align: center;
   color: #000;
+  padding-top: 5px;
+  margin-top: -5px;
 }
 a.main:hover, #links a:hover {
   background: url(darkbluepill.jpg) no-repeat;
@@ -81,6 +83,8 @@ p.main, p.main2, p.main3, p.main4,
   text-decoration: none;
   text-align: center;
   color: #000;
+  padding-top: 5px;
+  margin-top: -5px;
 }
 #header li span.title {
   display: inline-block;
@@ -99,6 +103,8 @@ a.autoreadlink, li.autoreadentry a {
   text-decoration: none;
   text-align: center;
   color: #000;
+  padding-top: 5px;
+  margin-top: -5px;
 }
 a.lev2, a.lev3 {
   display: block;
