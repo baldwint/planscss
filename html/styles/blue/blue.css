@@ -137,15 +137,17 @@ a.lev2, a.lev3 {
 #autoread a {
   display: inline-block;
 }
-a.lev2:hover, a.autoreadlink:hover {
+a.lev2:hover, #autoread a.autoreadlink:hover {
   background: url(yellowsolid.jpg) no-repeat;
 }
-a.lev3, li.autoreadentry a {
+a.lev3, #autoread li.autoreadentry a {
   background: url(redsolid.jpg) no-repeat;
+  color: #000;
   font-weight: normal;
 }
-a.lev3:hover, li.autoreadentry a:hover {
+a.lev3:hover, #autoread li.autoreadentry a:hover {
   background: url(redborder.jpg) no-repeat;
+  text-decoration: none;
 }
 /*****************
  * In-plan Links *
