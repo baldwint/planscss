@@ -52,6 +52,7 @@ a:hover {
   border-style: solid;
   border-color: #000;
 }
+#logo a { border: none; }
 /******************
  * Forms and misc *
  ******************/
