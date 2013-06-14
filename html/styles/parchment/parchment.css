@@ -65,6 +65,7 @@ input, button {
 table.mainpanel input,
 div#nav input, div#nav button {
   border: 1px #000 solid;
+  max-width: 180px;
 }
 hr {
   color: #CCC;
@@ -78,6 +79,11 @@ table.lowerpanel, div#links {
   background-attachment: fixed;
   border: 1px #000 solid;
   padding: 10px;
+}
+div#links li {
+  margin-left: 0;
+}
+table.lowerpanel {
   width: 100%;
 }
 p.main {
@@ -93,9 +99,11 @@ p.lev2 {
 .lowerpanel a, #links a {
   color: #000;
   display: block;
-  width: 100%;
   font-weight: bold;
   text-align: center;
+}
+.lowerpanel a {
+  width: 100%;
 }
 .lowerpanel a:hover {
   background: #a8e url("parchdark.jpg") repeat;
