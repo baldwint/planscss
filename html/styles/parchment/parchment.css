@@ -57,12 +57,13 @@ a:hover {
 pre br {display:none}
 /* End fix */
 
-input {
+input, button {
   background-color: #FFF;
   font-family: "Garamond, Georgia, Times New Roman, Times, serif";
   font-size: larger;
 }
-table.mainpanel input {
+table.mainpanel input,
+div#nav input, div#nav button {
   border: 1px #000 solid;
 }
 hr {

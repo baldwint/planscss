@@ -36,10 +36,11 @@ td.left, div#nav {
 pre br {display:none}
 /* End fix */
 
-input {
+input, button {
   background-color: #FFF;
 }
-table.mainpanel input {
+table.mainpanel input,
+div#nav input, div#nav button {
   border: 1px #999 solid;
 }
 hr {

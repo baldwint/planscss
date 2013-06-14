@@ -44,10 +44,11 @@ td.right {
 /******************
  * Forms and misc *
  ******************/
-input {
+input, button {
   background-color: #FFF;
 }
-table.mainpanel input {
+table.mainpanel input,
+div#nav input, div#nav button {
  background-color: #eee;
   border: 1px #999 solid;
  color: #005
