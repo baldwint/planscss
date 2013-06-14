@@ -111,3 +111,8 @@ div#main {
 
 /* edit area */
 textarea#edit_textarea { width: 98%; }
+
+/* secrets */
+div.secret                  { margin-top: 1em; }
+div.secret p.sub            { margin-top: 0.5em; }
+div.secret span.date_posted { font-weight: bold; }
